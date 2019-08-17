@@ -152,6 +152,8 @@ $(function () {
     var person = curData.person;
     var num = 0;
 
+    pDom.txtDom.html('');
+
     if (!self) {
       if (!$('.cancel', pDom.dlg).length) {
         pDom.dlg.append('<div class="cancel"></div>')
