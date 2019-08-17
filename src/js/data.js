@@ -2,10 +2,22 @@ var sourceList = {
   name: '大雪满弓刀',
   chaper: '第二回 大雪论刀',
   list: [
-    'https://hbimg.huabanimg.com/9258f155ba75e60a9d5d7fe75b0d8926298b5094167f3-vulYXn_fw658',
-    'https://hbimg.huabanimg.com/85a2572d5c594dc03aa40b0c040f0f9b579a563119343-CrN3dL_fw658',
-    'https://hbimg.huabanimg.com/857b0723b7efe71fe13a5b71833e2858647703c32181a-qXc75D_fw658',
-    'https://hbimg.huabanimg.com/1ac8233816a13829cec5ed30e3c50421eeb619021be391-aO6Bms_fw658'
+    './src/img/icon-back.png',
+    './src/img/icon-cartoon.png',
+    './src/img/icon-close.png',
+    './src/img/icon-dlg.png',
+    './src/img/icon-sort.png',
+    './src/img/icon-title.png',
+    './src/img/pic-book1.png',
+    './src/img/pic-mh-1.png',
+    './src/img/pic-mh-2.png',
+    './src/img/pic-mh-3.png',
+    './src/img/pic-mh-4.png',
+    './src/img/pic-mh-dd.png',
+    './src/img/pic-p1-1.png',
+    './src/img/pic-p1-2.png',
+    './src/img/pic-p2-1.png',
+    './src/img/pic-p2-2.png'
   ]
 
 }
