@@ -237,7 +237,7 @@ a {
   background: #6876C1;
   border-radius: .2rem;
   padding: .5rem;
-  color: #C3CFF1;
+  color: #fff;
   font-size: .6rem;
   box-shadow: 0 .8rem .6rem rgba(0, 0, 0, .2);
   position: relative;
@@ -505,7 +505,7 @@ a {
   height: 100%;
   width: 100%;
   overflow: auto;
-  padding-top: 2rem;
+  padding-top: 3rem;
   display: none;
 }
 

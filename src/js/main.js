@@ -184,7 +184,16 @@ $(function () {
 
         return;
       }
-      pDom.txtDom.html(d[0]);
+
+      if (num === 0) {
+
+        setTimeout(function () {
+          pDom.txtDom.html(d[0]);
+        }, 600)
+
+      } else {
+        pDom.txtDom.html(d[0]);
+      }
       $('#' + d[1], pDom.plist)
         .attr('class', 'op cur face-' + d[2])
         .siblings()
