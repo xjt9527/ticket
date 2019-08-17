@@ -80,7 +80,7 @@ $(function () {
     },
 
     init: function () {
-      let curData = pageData[this.num];
+      var curData = pageData[this.num];
 
       if (!curData) { return }
 
