@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <script>
+   window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+            function f() {
+                var d = document.documentElement;
+                var cw = d.clientWidth || 640;
+                d.style.fontSize = (20 * (cw / 320)) > 40 ? 40 + 'px' : (20 * (cw / 320)) + 'px';
+            }
+            f();
+            return f;
+        })(), false);
+  </script>
+  <link rel="stylesheet" href="./src/css/book.css">
+  <link rel="stylesheet" href="./src/css/swiper.min.css">
+  <script src="./src/js/zepto.min.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="index-header">
+    <div class="sort icon">
+      <span class="icon-sort"></span>
+    </div>
+    <div class="search">
+      <input type="text" name="" placeholder="搜索本地或书城" id="">
+    </div>
+
+    <div class="user icon">
+      <span class="icon-user"></span>
+    </div>
+
+  </div>
+
+  <div class=" swiper-container index-swiper" id="id-banner">
+
+    <div class="bg" id="banner-bg">
+      <div class="obg-1 show"></div>
+      <div class="obg-2"></div>
+      <div class="obg-3"></div>
+    </div>
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="detail">
+              <h2>《煞气横秋》</h2>
+              <h3>第121章 你知道我在找你</h3>
+              <div class="com-stars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              <a href="#" class="see-more">开始阅读</a>
+            </div>
+      
+            <div class="img">
+              <img src="./src/book/img_book_02.png" alt="">
+            </div>
+      
+          </div>
+      <div class="swiper-slide">
+        <div class="detail">
+          <h2>《平天策》</h2>
+          <h3>第34章 安得广厦千万间</h3>
+          <div class="com-stars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#" class="see-more">开始阅读</a>
+        </div>
+  
+        <div class="img">
+          <img src="./src/book/img_book_01.png" alt="">
+        </div>
+  
+      </div>
+      <div class="swiper-slide">
+        <div class="detail">
+          <h2>《秦臣》</h2>          
+          <h3>第321章 卑鄙者的自述</h3>
+          <div class="com-stars">
+              <span></span>
+              <span></span>
+            </div>
+          <a href="#" class="see-more">开始阅读</a>
+        </div>
+  
+        <div class="img">
+          <img src="./src/book/img_book_03.png" alt="">
+        </div>
+  
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="site-main">
+    <div class="bbox">
+
+      <div class="box-hd">
+        <ul class="tab">
+          <li class="cur">推荐</li>
+          <li>今日更新</li>
+          <li>热门推荐</li>
+        </ul>
+
+        <div class="act"></div>
+      </div>
+
+      <div class="box-bd">
+
+        <ul class="book-list">
+          <li>
+            <a href="#">
+              <img src="./src/book/img_book_01.png" alt="">
+              <h3>平天策</h3>
+              <p class="sort">玄幻 · 奇幻</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./src/book/img_book_02.png" alt="">
+              <h3>煞气横秋</h3>
+              <p class="sort">玄幻 · 奇幻</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./src/book/img_book_03.png" alt="">
+              <h3>秦臣</h3>
+              <p class="sort">玄幻 · 奇幻</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <img src="./src/book/img_book_04.png" alt="">
+                <h3>雪中悍刀行</h3>
+              <p class="sort">玄幻 · 奇幻</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <img src="./src/book/img_book_05.png" alt="">
+                <h3>庆余年</h3>
+              <p class="sort">玄幻 · 奇幻</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <img src="./src/book/img_book_06.png" alt="">
+                <h3>邪气凛然</h3>
+              <p class="sort">玄幻 · 奇幻</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="bbox">
+      <div class="box-bd">
+        <ul class="topic-list">
+          <li>
+            <a href="#">
+              <h3>完本好书</h3>
+              <p>爆款小说在线看</p>
+              <img src="./src/book/img_wanjie.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>登陆巅峰</h3>
+              <p>夺天地造化</p>
+              <img src="./src/book/img_dianfeng.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>羽化升仙</h3>
+              <p>结金丹称仙人</p>
+              <img src="./src/book/img_jindan.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>战斗力爆表</h3>
+              <p>战5渣开挂</p>
+              <img src="./src/book/img_zhandou.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bbox">
+      <div class="box-hd com-title">
+        <h2>男生畅销</h2>
+        <div class="act">
+          <span class="icon-refresh">换一批</span>
+        </div>
+      </div>
+
+      <div class="box-bd">
+        <ul class="com-list">
+          <li>
+            <span class="img">
+              <img src="./src/book/img_book_small_01.png" alt="">
+            </span>
+            <div class="info">
+              <h2>斗破苍穹</h2>
+              <div class="txt">
+                  这里是属于斗气的世界，没有花俏艳丽的魔法，有的，仅仅是繁衍到巅峰的斗气！
+              </div>
+              <p>作者: 今何在</p>
+            </div>
+          </li>
+          <li>
+            <span class="img">
+              <img src="./src/book/img_book_05.png" alt="">
+            </span>
+            <div class="info">
+              <h2>庆余年</h2>
+              <div class="txt">
+                  我要这天，再遮不住我眼，我要这地，再埋不了我心，要这众生，都明白我意，要那诸佛，都烟消云散！
+              </div>
+              <p>作者: 今何在</p>
+            </div>
+          </li>
+          <li>
+            <span class="img">
+              <img src="./src/book/img_book_small_03.png" alt="">
+            </span>
+            <div class="info">
+              <h2>斗破苍穹</h2>
+              <div class="txt">
+                  我要这天，再遮不住我眼，我要这地，再埋不了我心，要这众生，都明白我意，要那诸佛，都烟消云散！
+              </div>
+              <p>作者: 今何在</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+<script src="./src/js/swiper.min.js"></script>
+
+<script>
+
+  var idSwiper = new Swiper('#id-banner', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    on:{
+      slideChange: function() {
+        let curIndex = this.realIndex;
+        $('#banner-bg div').eq(curIndex).addClass('show').siblings().removeClass('show')
+      }
+    }
+  })
+
+</script>
+
+  
+</body>
+</html>

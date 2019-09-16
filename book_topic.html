@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script>
+   window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+            function f() {
+                var d = document.documentElement;
+                var cw = d.clientWidth || 640;
+                d.style.fontSize = (20 * (cw / 320)) > 40 ? 40 + 'px' : (20 * (cw / 320)) + 'px';
+            }
+            f();
+            return f;
+        })(), false);
+  </script>
+    <link rel="stylesheet" href="./src/css/book.css">
+    <link rel="stylesheet" href="./src/css/swiper.min.css">
+    <script src="./src/js/zepto.min.js"></script>
+  </head>
+  <body>
+
+    <div class="wrap top-wrap">
+
+      <div class="index-header">
+        <div class="sort icon">
+          <span class="icon-sort"></span>
+        </div>
+        <div class="search">
+          <input type="text" name="" placeholder="搜索本地或书城" id="">
+        </div>
+
+        <div class="user icon">
+          <span class="icon-user"></span>
+        </div>
+
+      </div>
+
+      <div class="swiper-container" id="top-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="osp">
+              <img src="./src/book/" alt="">
+              <div class="com-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="sort">仙侠</span>
+              <div class="detail">
+                <h2>《大雪满刀弓》</h2>
+                <h3>第35章 大雪坪论刀道 <span class="tag">更新中</span></h3>
+
+                <p class="txt">刀光剑影 爱恨情仇 这个江湖 终究是精彩</p>
+
+                <div class="info">
+                  <span>作者: 聋戈</span>
+                  <div class="num">
+                    <span>3423<small>在看</small></span>
+                    <span>123<small>评论</small></span>
+                  </div>
+                </div>
+
+                <div class="act">
+                  <a href="#" class="com-btn">开始阅读</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="osp">
+              <img src="./src/book/" alt="">
+              <div class="com-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="sort">仙侠</span>
+              <div class="detail">
+                <h2>《大雪满刀弓》</h2>
+                <h3>第35章 大雪坪论刀道 <span class="tag">更新中</span></h3>
+
+                <p class="txt">刀光剑影 爱恨情仇 这个江湖 终究是精彩</p>
+
+                <div class="info">
+                  <span>作者: 聋戈</span>
+                  <div class="num">
+                    <span>3423<small>在看</small></span>
+                    <span>123<small>评论</small></span>
+                  </div>
+                </div>
+
+                <div class="act">
+                  <a href="#" class="com-btn">开始阅读</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="osp">
+              <img src="./src/book/" alt="">
+              <div class="com-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="sort">仙侠</span>
+              <div class="detail">
+                <h2>《大雪满刀弓》</h2>
+                <h3>第35章 大雪坪论刀道 <span class="tag">更新中</span></h3>
+
+                <p class="txt">刀光剑影 爱恨情仇 这个江湖 终究是精彩</p>
+
+                <div class="info">
+                  <span>作者: 聋戈</span>
+                  <div class="num">
+                    <span>3423<small>在看</small></span>
+                    <span>123<small>评论</small></span>
+                  </div>
+                </div>
+
+                <div class="act">
+                  <a href="#" class="com-btn">开始阅读</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+    <script src="./src/js/swiper.min.js"></script>
+
+    <script>
+
+      var bt = parseInt($('html').css('font-size'));
+
+      let num = (36/24)*bt
+
+      var idSwiper = new Swiper('#top-banner', {
+        slidesPerView: 1,
+        spaceBetween: -num,
+        centeredSlides: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      })
+
+    </script>
+  </body>
+</html>
