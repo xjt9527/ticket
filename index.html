@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>异视小说</title>
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-  <script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script>
       window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', (function () {
           function f() {
               var d = document.documentElement;
@@ -27,81 +27,81 @@
           return f;
       })());
   </script>
-  <link rel="stylesheet" href="./src/css/main.css">
-  <script src="./src/js/zepto.min.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/zepto.min.js"></script>
+  </head>
+  <body>
 
 
-  <div id="loadPage">
-    <h1></h1>
-    <h2></h2>
+    <div id="loadPage">
+      <h1></h1>
+      <h2></h2>
 
 
-    <div class="progress">
-      <div class="bar">
-        <div class="cur"></div>
+      <div class="progress">
+        <div class="bar">
+          <div class="cur"></div>
+        </div>
+        <p>载入中</p>
       </div>
-      <p>载入中</p>
+
+      <a id="#" class="icon icon-back"></a>
     </div>
 
-    <a id="#" class="icon icon-back"></a>
-  </div>
-    
-  <div id="wrap">
+    <div id="wrap">
       <div id="chaper">
-          <h1>[大雪满刀弓]</h1>
-          <h2>第一回 刀客</h2>
+        <h1>[大雪满刀弓]</h1>
+        <h2>第一回 刀客</h2>
+      </div>
+
+
+      <div id="mbox">
+      </div>
+      <div id="act">
+        <a href="/yishi/dist/#/detail-page" class="icon icon-back"></a>
+        <a href="#" class="icon icon-list"></a>
+      </div>
+
+      <div id="dialog-box">
+        <div id="personList"></div>
+        <div id="dlgTxt">
+
+        </div>
+      </div>
+
+      <div id="chapList">
+        <div class="main">
+          <h2>选章节</h2>
+          <ul>
+            <li><a href="">第一回 </a></li>
+            <li><a href="">第二回 </a></li>
+            <li><a href="">第三回 </a></li>
+            <li><a href="">第四回 </a></li>
+            <li><a href="">第五回 </a></li>
+            <li><a href="">第六回 </a></li>
+          </ul>
         </div>
 
-
-        <div id="mbox">
-        </div>
-        <div id="act">
-          <a href="/yishi/dist/#/detail-page" class="icon icon-back"></a>
-          <a href="#" class="icon icon-list"></a>
-        </div>
-
-        <div id="dialog-box">
-          <div id="personList"></div>
-          <div id="dlgTxt">
-
-          </div>
-        </div>
-
-        <div id="chapList">
-            <div class="main">
-                <h2>选章节</h2>
-                <ul>
-                  <li><a href="">第一回 </a></li>
-                  <li><a href="">第二回 </a></li>
-                  <li><a href="">第三回 </a></li>
-                  <li><a href="">第四回 </a></li>
-                  <li><a href="">第五回 </a></li>
-                  <li><a href="">第六回 </a></li>
-                </ul>
-            </div>
-          
-          </div>
-
-  </div>
-
-
-
-
-  <div id="cartoonBox">
-
-    <div id="ct-imgs">
+      </div>
 
     </div>
 
-  </div>
 
 
-  <script src="./src/js/data.js"></script>
-  <script src="./src/js/main.js"></script>
+
+    <div id="cartoonBox">
+
+      <div id="ct-imgs">
+
+      </div>
+
+    </div>
 
 
-  
-</body>
+    <script src="./src/js/data.js"></script>
+    <script src="./src/js/main.js"></script>
+
+
+
+  </body>
 </html>

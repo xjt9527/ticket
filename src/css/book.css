@@ -476,6 +476,7 @@ a {
   opacity: .5;
   position: relative;
   transition: all .4s;
+  overflow: hidden;
 }
 
 #top-banner .swiper-slide-active .osp {
@@ -493,8 +494,9 @@ a {
   left: 0;
   width: 100%;
   bottom: 0;
-  padding: 1rem;
-  border-radius: .4rem 0 0 0
+  padding: .6rem 1rem 1rem;
+  border-radius: .4rem 0 0 0;
+  background: #fff;
 }
 
 #top-banner .osp .detail h2 {
@@ -578,4 +580,9 @@ a {
   color: #fff;
   background: #4B6EEB;
   border-radius: 2rem;
+  transition: all .4s;
+}
+
+.com-btn:active {
+  opacity: .5;
 }
