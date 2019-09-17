@@ -204,22 +204,24 @@ a {
 }
 
 .index-swiper .bg .obg-1 {
-  background: #484b57 url(../book/img-bn-1.png) top center no-repeat;
-  background-size: 100% auto;
+  background: #484b57
 }
 
 .index-swiper .bg .obg-2 {
-  background: #78080b url(../book/img-bn-1.png) top center no-repeat;
-  background-size: 100% auto;
+  background: #78080b
 }
 
 .index-swiper .bg .obg-3 {
-  background: #715633 url(../book/img-bn-1.png) top center no-repeat;
-  background-size: 100% auto;
+  background: #715633
 }
 
 .index-swiper .bg .show {
   opacity: 1;
+}
+
+.index-swiper .bg img {
+  width: 100%;
+  opacity: .24;
 }
 
 
