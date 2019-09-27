@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+          function f() {
+            var d = document.documentElement;
+            var cw = d.clientWidth || 640;
+            d.style.fontSize = (20 * (cw / 320)) > 40 ? 40 + 'px' : (20 * (cw / 320)) + 'px';
+          }
+          f();
+          return f;
+        })(), false);
+      </script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/zepto.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="index">
+
+      <a href="./sort.html" class="act act-sort"></a>
+      <a href="./jia.html" class="act act-jia"></a>
+      <a href="./qian.html" class="act act-qian"></a>
+      <a href="./hot.html" class="act act-hot"></a>
+
+      <img src="./imgs/index.png" alt="" class="bk-img">
+    </div>
+
+    <div class="fix-foot">
+
+      <img src="./imgs/index-foot.png" alt="">
+
+    </div>
+
+
+  </body>
+</html>

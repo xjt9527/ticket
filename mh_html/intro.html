@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+          function f() {
+            var d = document.documentElement;
+            var cw = d.clientWidth || 640;
+            d.style.fontSize = (20 * (cw / 320)) > 40 ? 40 + 'px' : (20 * (cw / 320)) + 'px';
+          }
+          f();
+          return f;
+        })(), false);
+      </script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/zepto.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="index">
+
+      <a href="./sort.html" class="act act-back"></a>
+      <a href="./see.html" class="act act-see"></a>
+      <a href="./list.html" class="act act-list"></a>
+
+      <img src="./imgs/intro.png" alt="" class="bk-img">
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+          function f() {
+            var d = document.documentElement;
+            var cw = d.clientWidth || 640;
+            d.style.fontSize = (20 * (cw / 320)) > 40 ? 40 + 'px' : (20 * (cw / 320)) + 'px';
+          }
+          f();
+          return f;
+        })(), false);
+      </script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/zepto.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="see-page">
+
+      <a href="./list.html" class="act act-back"></a>
+
+      <img src="./imgs/see-1.png" alt="" class="bk-img">
+
+      <div class="coins">
+        <img src="./imgs/coin.png" alt="">
+        <div class="txt">
+          点击领取 <span>300</span> 阅读奖励金币
+        </div>
+      </div>
+
+      <img src="./imgs/see-2.png" alt="" class="bk-img">
+    </div>
+
+    <div class="fix-foot see-act">
+
+      <img src="./imgs/see-act.png" alt="">
+
+    </div>
+
+
+    <div class="getCoins">
+      <img src="./imgs/coin.png" alt="">
+
+    </div>
+
+
+    <script>
+      
+      let tt = false;
+      $('.bk-img').on('click', function() {
+
+        if(!tt) {
+          $('.see-act').addClass('show').removeClass('hide')
+        } else {
+          $('.see-act').addClass('hide').removeClass('show')
+
+        }
+
+        tt = !tt;
+
+      })
+      
+      $('.coins').on('click', function() {
+        $(this).addClass('hide');
+
+        $('.getCoins').addClass('show')
+      })
+    </script>
+  </body>
+</html>

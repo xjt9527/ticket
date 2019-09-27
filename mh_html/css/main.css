@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bk-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fix-foot {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.fix-foot img {
+  display: block;
+  width: 100%;
+}
+
+.act {
+  position: absolute;
+  /* background: rgba(0, 0, 0, .24) */
+}
+
+.act-sort {
+  width: 2rem;
+  height: 3rem;
+  left: 1.25rem;
+  top: 12.25rem;
+}
+
+.act-jia {
+  width: 2rem;
+  height: 3rem;
+  left: 5rem;
+  top: 12.25rem;
+}
+
+.act-qian {
+  width: 2rem;
+  height: 3rem;
+  left: 8.75rem;
+  top: 12.25rem;
+}
+
+.act-hot {
+  width: 2rem;
+  height: 3rem;
+  right: 1.5rem;
+  top: 12.25rem;
+}
+
+.act-back {
+  width: 1rem;
+  height: 1rem;
+  top: 1.35rem;
+  left: .5rem;
+}
+
+.act-intro {
+  width: 15rem;
+  height: 7rem;
+  left: .75rem;
+  top: 14rem;
+}
+
+.act-see {
+  width: 5rem;
+  height: 2.5rem;
+  right: .2rem;
+  top: 10.5rem;
+}
+
+.act-list {
+  width: 2rem;
+  height: 1rem;
+  top: 14rem;
+  left: 10rem;
+}
+
+.act-toIntro {
+  width: 2rem;
+  height: 1rem;
+  top: 14rem;
+  left: 3.5rem;
+}
+
+.act-ad {
+  width: 15rem;
+  height: 10rem;
+  top: 22rem;
+  left: .5rem;
+}
+
+.times {
+  position: absolute;
+  left: .75rem;
+  top: 3.75rem;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  color: #fff;
+  font-size: .5rem;
+  padding: .4rem .75rem
+}
+
+
+.see-page {
+  background: #000
+}
+
+.coins {
+  width: 11.5rem;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10rem;
+  margin: 1rem auto;
+  font-size: .65rem;
+  color: #fff;
+  padding: .5rem;
+}
+
+.coins .txt {
+  display: inline-block;
+  width: 8.5rem;
+  vertical-align: middle;
+}
+
+
+.coins .txt span {
+  color: yellow;
+  font-weight: bold;
+}
+
+
+
+.coins img {
+  display: inline-block;
+  margin-right: .5rem;
+  width: 2rem;
+  vertical-align: middle;
+}
+
+.coins.hide {
+  opacity: 1;
+  display: none;
+}
+
+.see-act {
+  display: none;
+}
+
+.see-act.show {
+
+  display: block;
+  opacity: 0;
+  animation: show .4s both;
+
+}
+
+.see-act.hide {
+  display: block;
+  opacity: 1;
+
+  animation: hide .4s both
+}
+
+
+.getCoins {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -1.7rem;
+  display: none;
+}
+
+.getCoins.show {
+  display: block;
+}
+
+.getCoins img {
+  width: 3.4rem;
+  animation: coins 1.5s both;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    transform: translateY(100%)
+  }
+}
+
+
+@keyframes coins {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) rotateY(0deg)
+  }
+
+  38% {
+    opacity: 1;
+    transform: translateY(0) rotateY(360deg)
+  }
+
+  72% {
+    opacity: 1;
+    transform: translateY(0) rotateY(360deg)
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%) rotateY(0)
+  }
+}

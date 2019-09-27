@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function () {
+          function f() {
+            var d = document.documentElement;
+            var cw = d.clientWidth || 640;
+            d.style.fontSize = (20 * (cw / 320)) > 40 ? 40 + 'px' : (20 * (cw / 320)) + 'px';
+          }
+          f();
+          return f;
+        })(), false);
+      </script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/zepto.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="index">
+
+      <div class="times">
+        <span id="the-time">6</span> 秒后可关闭
+      </div>
+      <img src="./imgs/ad.png" alt="" class="bk-img">
+    </div>
+
+
+    <script>
+      
+      function cutTime() {
+
+        var tt = 6;
+        var tp = null;
+        tp = setInterval(function() {
+
+          tt -=1;
+
+          if(tt == 0) {
+            clearInterval(tp);
+
+            $('.times').html('关闭').on('click', function() {
+              location.href="./list.html"
+            })
+            return;
+          }
+
+
+          $('#the-time').html(tt)
+
+
+        },1000)
+
+        
+      }
+      
+      cutTime()
+    
+    
+    </script>
+  </body>
+</html>
